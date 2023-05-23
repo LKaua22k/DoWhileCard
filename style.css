@@ -2,12 +2,88 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-:root{
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  :root{
+    --black: hsl(240, 6%, 13%);
+    --grey: hsl(240, 9%, 89%);
+  
     font-size: 62.5%;
-}
-
-body{
+  }
+  
+  body{
+    display: grid;
+    place-items: center;
     font-size: 1.6rem;
-}
+    height: 100%;
+    --webkit-font-smoothing: antialiased;
+  }
+  
+  main{
+    background: url(./imgs/back-mobile.svg) no-repeat center/cover;
+    min-height: 8.12rem;
+    height: 100vh;
+    width: 100vw;
+  
+  }
+  
+  .container{
+    max-width: 25rem;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .avatar{
+    width: 18rem;
+    margin: 18.4rem auto 0;
+    position: relative;
+  }
+  
+  .avatar img{
+    width: 16rem;
+    height: 18.4rem;
+    object-fit: cover;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  
+  .user_texts{
+    margin-top: 2.4rem;
+    display: grid;
+    gap: 0.4rem;
+  }
+  
+  .user_texts h1{
+    font-size: 2.4rem;
+    color: var(--grey);
+  }
+  .user_subtitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+  
+    color: var(--grey);
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+  
+  .user_descreption{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--grey);
+    margin-top: 3.3rem;
+  }
+  
+  ul{
+    margin-top: 6.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+  }
