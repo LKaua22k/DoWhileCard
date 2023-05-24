@@ -5,10 +5,16 @@
     text-decoration: none;
     list-style: none;
   }
+
+  *,body{
+    font-family: 'Roboto', sans-serif;
+  }
   
   :root{
     --black: hsl(240, 6%, 13%);
+    --grey-light:hsl(240, 7%, 78%);
     --grey: hsl(240, 9%, 89%);
+    --White: white;
   
     font-size: 62.5%;
   }
@@ -19,6 +25,7 @@
     font-size: 1.6rem;
     height: 100%;
     --webkit-font-smoothing: antialiased;
+
   }
   
   main{
@@ -38,13 +45,13 @@
   
   .avatar{
     width: 18rem;
-    margin: 16.4rem auto 0;
+    margin: 18rem auto 0;
     position: relative;
   }
   
   .avatar img{
-    width: 18rem;
-    height: 20.4rem;
+    width: 16.5rem;
+    height: 18.5rem;
     object-fit: cover;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   }
@@ -66,7 +73,7 @@
     justify-content: center;
     gap: 1.2rem;
   
-    color: var(--grey);
+    color: var(--grey-light);
     font-weight: 400;
     font-size: 1.6rem;
   }
@@ -91,7 +98,24 @@
 
   ul li a i{
     font-size: 2.4rem;
-    color: var(--grey);
+    color: var(--White);
     background: #323238;
     padding: 1.2rem;
+    transition: 0.5s;
+  }
+
+  ul li a i:hover{
+    color: var(--black);
+    background-color: var(--grey-light);
+    transition: 0.5s;
+  }
+
+  @media (min-width:650px) {
+    main{
+      background: url(./imgs/back-desktop.svg) no-repeat center/cover;
+    }
+
+    ul{
+      margin-top: 4rem;
+    }
   }
