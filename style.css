@@ -123,6 +123,15 @@
       background: url(./imgs/back-desktop.svg) no-repeat center/cover;
     }
 
+    .avatar > img{
+      width: 15.5rem;
+      height: 17.5rem;
+    }
+
+    .avatar{
+      margin: 16rem auto 0;
+    }
+
     ul{
       margin-top: 4rem;
     }
