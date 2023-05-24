@@ -44,12 +44,20 @@
   }
   
   .avatar{
-    width: 18rem;
+    width: 16rem;
     margin: 18rem auto 0;
     position: relative;
   }
+
+  .avatar span{
+    position: absolute;
+    top: -1.5rem;
+    left: -0.9rem;
+    width: 8rem;
+    z-index: 1;
+  }
   
-  .avatar img{
+  .avatar > img{
     width: 16.5rem;
     height: 18.5rem;
     object-fit: cover;
